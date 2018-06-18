@@ -1,3 +1,28 @@
+// main click event
+// start timer method
+// count clicks
+// second click event
+// is a match
+    // yes, stay flipped
+    // keep stats
+        // no, action color/shake
+        // turn back over
+    // reset two click count method
+        // one click
+        // two click
+//game coplete test
+    // win message
+    // stat message
+    // grade message
+        //grade system 
+            // -- 16 clicks to 26 (3 stars)
+            // -- 26 clicks to 36 (2 stars)
+            // -- 36 clicks to 46 (1 stars)
+            // -- 46 clicks and up (no stars)
+
+
+
+
 /*
  * Create a list that holds all of your cards
  */
