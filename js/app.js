@@ -1,6 +1,14 @@
 // main click event (or load event?)
 
 // count clicks
+    const clicks = 0;
+    function count_clicks() {
+
+        clicks += 1;
+        document.getElementByClass(".card").innerHTML = clicks;
+        console.log(clicks);
+
+    };
 // listen for first click
     // start timer method
 
