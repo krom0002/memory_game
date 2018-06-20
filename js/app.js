@@ -1,14 +1,18 @@
 // main click event (or load event?)
 
+
+
 // count clicks
-    const clicks = 0;
-    function count_clicks() {
+    
+   
+var allCards = document.querySelectorAll('.card');
 
-        clicks += 1;
-        document.getElementByClass(".card").innerHTML = clicks;
-        console.log(clicks);
+allCards.forEach(function(card) {
+    card.addEventListener('click', function(e) {
+        card.classList.add('open', 'show');
+    });
+});
 
-    };
 // listen for first click
     // start timer method
 
