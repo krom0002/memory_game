@@ -3,9 +3,15 @@
  */
 
  .score-panel {
-    text-align: left;
+    /* text-align: left; */
     width: 345px;
     margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    font-size: 25px;
 }
 
 .score-panel .stars {
