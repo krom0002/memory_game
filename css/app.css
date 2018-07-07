@@ -1,7 +1,10 @@
+/* this code was given */
+/* global styles */
 html {
     box-sizing: border-box;
 }
 
+/* need to know more about this??? */
 *,
 *::before,
 *::after {
@@ -17,7 +20,7 @@ body {
 }
 
 body {
-    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
+    background: #ffffff; 
     font-family: 'Coda', cursive;
 }
 
