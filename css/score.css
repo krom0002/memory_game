@@ -26,11 +26,33 @@
     display: inline-block;
 }
 
-.restart {
-    float: right;
+.control_panal {
+
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    /* background-color: gray; */
+    padding: 15px;
+}
+
+.start_button {
+
+    /* float: left; */
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 20px; 
+
+}
+
+.restart {
+    float: right;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
     font-size: 30px; 
 }
 
