@@ -22,4 +22,4 @@ function shuffle(array) {
     return array;
 }
 
-shuffle(card_array);
+// shuffle(card_array);
