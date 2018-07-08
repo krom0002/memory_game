@@ -23,3 +23,10 @@ function shuffle(array) {
 }
 
 // shuffle(card_array);
+
+function write_card() {
+
+    for (card of cards_array) {
+        deck.appendChild(card);
+    }
+}
