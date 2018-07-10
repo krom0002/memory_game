@@ -5,6 +5,12 @@ let card_list = document.querySelectorAll('.deck li');
 // converts node list to array
 let card_array = [].slice.call(card_list);
 
+// select the deck element
+let deck = document.querySelector('.deck');
+
+// slect the icon element
+let card = document.createElement('i');
+
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
@@ -23,17 +29,12 @@ function shuffle(array) {
     return array;
 }
 
-// select the deck element
-let deck = document.querySelector('.deck');
-
 // writes new shuffeled cards to deck
 function write_deck() {    
-
-    let card = document.createElement('i');
 
     for (card of card_array) {
         
         deck.appendChild(card);
-    }
-    
+    }    
 }
+

@@ -1,52 +1,38 @@
+// array for flipped cards
+let flipped = [];
 
-
-
+// matched card conditional
+let matched_card = false;
 
 // // from mike whatts video open and show card on click
-
 function flip_card() {
 card_array.forEach(function(card) {
     card.addEventListener('click', function(e) {
-        card.classList.add('open', 'show');
+        show_card(card);
+        add_flipped(card);
+        console.log(add_flipped)
     });
 });
 }
 
+// shows card by toggling open and show class
+function show_card(card) {
 
-
-
-
-// select start button element
-let start_button = document.querySelector(".start_button");
-
-// add click event to start button
-start_button.addEventListener("click", start_game);
-
-
-// shuffles deck, writes to deck, and starts timmer
-function start_game() {
-    shuffle(card_array);
-    
-    write_deck();
-    flip_card();
-        
-    // start timmer
+    card.classList.toggle('open');
+    card.classList.toggle('show');
 }
 
-// select reset button element
-let reset_button = document.querySelector(".reset_button");
+// adds flipped card to flipped array
+function add_flipped(card) {
 
-// add click event to reset button
-reset_button.addEventListener("click", reset_game);
-
-
-// shuffles deck, writes to deck, and starts timmer
-function reset_game() {
-    shuffle(card_array);
-    write_deck();    
-    // end timmer
-    // give up modal
+    flipped.push(card);
 }
 
-  
+// clears deck of matched cards -- used with rest button
+function clear_deck() {    
+
+    for (card of card_array) {
         
+        card.classList.toggle('match', !!matched_card);
+    }    
+}
