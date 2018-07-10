@@ -1,5 +1,7 @@
+
+
 // select all card elements
-let card_list = document.querySelectorAll('.card');
+let card_list = document.querySelectorAll('.deck li');
 
 // converts node list to array
 let card_array = [].slice.call(card_list);
@@ -22,11 +24,16 @@ function shuffle(array) {
     return array;
 }
 
-// shuffle(card_array);
+// select the deck element
+let deck = document.querySelector('.deck');
 
-function write_card() {
+function write_deck() {    
 
-    for (card of cards_array) {
+    let card = document.createElement('i');
+
+    for (card of card_array) {
+        
         deck.appendChild(card);
     }
+    
 }
