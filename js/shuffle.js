@@ -1,5 +1,4 @@
 
-
 // select all card elements
 let card_list = document.querySelectorAll('.deck li');
 
@@ -27,6 +26,7 @@ function shuffle(array) {
 // select the deck element
 let deck = document.querySelector('.deck');
 
+// writes new shuffeled cards to deck
 function write_deck() {    
 
     let card = document.createElement('i');
