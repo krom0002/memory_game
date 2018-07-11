@@ -8,8 +8,10 @@ let matched_card = false;
 function flip_card() {
 card_array.forEach(function(card) {
     card.addEventListener('click', function(e) {
-        show_card(card);
+        
+        full_move(card);
         add_flipped(card);
+        
         console.log(add_flipped)
     });
 });
@@ -26,6 +28,7 @@ function show_card(card) {
 function add_flipped(card) {
 
     flipped.push(card);
+    
 }
 
 // clears deck of matched cards -- used with rest button
@@ -35,4 +38,39 @@ function clear_deck() {
         
         card.classList.toggle('match', !!matched_card);
     }    
+}
+
+function match() {
+
+    if (flipped[0].card.i 
+        === 
+        flipped[1].card.i
+    ) {
+
+        flipped[0].classList.toggle('match');
+        flipped[1].classList.toggle('match');
+        
+        flipped = [];
+    } 
+}
+
+
+function full_move(card) {
+
+    if (flipped.length <= 2) {
+        show_card(card);
+        match(card);
+    
+        timeout();
+    }
+} 
+
+function timeout() {
+
+    setTimeout(() => {
+
+        show_card(flipped[0]);
+        show_card(flipped[1]);
+        flipped = [];
+    }, 2000);
 }

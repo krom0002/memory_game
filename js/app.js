@@ -1,4 +1,17 @@
 
+// select all card elements
+let card_list = document.querySelectorAll('.deck li');
+
+// converts node list to array
+let card_array = [].slice.call(card_list);
+
+// select the deck element
+let deck = document.querySelector('.deck');
+
+// slect the icon element
+let card = document.createElement('i');
+
+
 function start_click() {
 // select start button element
 let start_button = document.querySelector(".start_button");
@@ -9,27 +22,25 @@ start_button.addEventListener("click", start_game);
 
 start_click();
 
-function reset_click() {
-// select reset button element
-let reset_button = document.querySelector(".reset_button");
-
-// add click event to reset button
-reset_button.addEventListener("click", reset_game);
-}
-
-reset_click();
-
-
 // shuffles deck, writes to deck, and starts timmer
 function start_game() {
 
     shuffle(card_array);    
     write_deck();
     flip_card();
-        
+            
     // start timmer
 }
 
+function reset_click() {
+    // select reset button element
+    let reset_button = document.querySelector(".reset_button");
+    
+    // add click event to reset button
+    reset_button.addEventListener("click", reset_game);
+    }
+    
+    reset_click();
 
 // shuffles deck, writes to deck, stops timmer, and launches give up modal
 function reset_game() {

@@ -1,15 +1,5 @@
 
-// select all card elements
-let card_list = document.querySelectorAll('.deck li');
 
-// converts node list to array
-let card_array = [].slice.call(card_list);
-
-// select the deck element
-let deck = document.querySelector('.deck');
-
-// slect the icon element
-let card = document.createElement('i');
 
 
 // Shuffle function from http://stackoverflow.com/a/2450976
