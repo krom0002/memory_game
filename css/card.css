@@ -51,4 +51,5 @@
 .deck .card.no_match {
 
     background: red;
+    transform: rotateY(10);
 }

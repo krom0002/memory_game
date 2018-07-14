@@ -1,11 +1,13 @@
+// select the deck element
+let deck = document.querySelector('.deck');
 
-
-
+// slect the icon element
+let card = document.createElement('i');
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
-    var currentIndex = array.length, 
-                       temporaryValue, 
+    var currentIndex = array.length,
+                       temporaryValue,
                        randomIndex;
 
     while (currentIndex !== 0) {
@@ -20,11 +22,10 @@ function shuffle(array) {
 }
 
 // writes new shuffeled cards to deck
-function write_deck() {    
+function write_deck() {
 
     for (card of card_array) {
-        
-        deck.appendChild(card);
-    }    
-}
 
+        deck.appendChild(card);
+    }
+}
