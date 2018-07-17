@@ -29,3 +29,12 @@ function write_deck() {
         deck.appendChild(card);
     }
 }
+
+// clears deck of matched cards -- used with rest button
+function clear_deck() {
+
+    for (card of card_array) {
+
+        card.classList.toggle('match', !!matched_card);
+    }
+}

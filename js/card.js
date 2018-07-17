@@ -3,6 +3,7 @@ let card_array = [].slice.call(card_list);
 let flipped = [];
 let click = 0;
 matched_card = false;
+match_count = 0;
 
 function set_click() {
 
@@ -11,17 +12,20 @@ function set_click() {
     }
 }
 
-
 function card_click(event) {
 
     let card_select = event.target;
 
-    if (click < 2 && card_select.classList.contains('card')) {
+    if (click <= 2 && !card_select.classList.contains('match')) {
+
         show_card(card_select);
-        flipped.push(card_select);
+        add_flip_Card(card_select);
+        console.log(click);
 
         if (flipped.length == 2) {
             match(card_select);
+            console.log(click);
+            move_count();
         }
     }
 }
@@ -35,6 +39,15 @@ function timeout() {
         }, 1500);
 }
 
+function add_flip_Card(card_select) {
+
+    if(click <= 2) {
+
+    flipped.push(card_select);
+    click++;
+    }
+}
+
 function show_card(card_select) {
 
     card_select.classList.toggle('open');
@@ -45,6 +58,8 @@ function show_match() {
 
     flipped[0].classList.toggle('match');
     flipped[1].classList.toggle('match');
+    match_count++;
+    console.log('match' + match_count);
 }
 
 function match() {
@@ -55,8 +70,10 @@ function match() {
 
         show_match();
         matched_card = true;
+        game_Over();
         flipped = [];
     } else {
         timeout();
     }
+    click = 0;
 }

@@ -1,0 +1,92 @@
+/* Game Alert */
+
+.game_Alet {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert_Body {
+
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    background: #ffffff;
+    text-align: center;
+}
+
+ .alert_Heading {
+
+    position: relative;
+    display: flex;
+    background: beige;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    border-bottom: 1px solid gray;
+}
+
+.alert_Title {
+
+    text-align: center;
+}
+
+.alert_Close {
+
+    position: absolute;
+    font-size: 3rem;
+    top: 0;
+    right: 15px;
+    transform: rotate(47deg);
+}
+
+.inner_Alert {
+
+    background: black;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 1.5rem;
+    width: 300px;
+    height: 300px;
+    top: 100%;
+    left: 10%;
+    margin: 10px;
+}
+
+.alert_Stats {
+
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    background: gray;
+}
+
+.alert_Buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: blue;
+    margin: 10px;
+}
+
+.alert_button {
+
+    width: 60px;
+    height: 30px;
+}
+
+.hide {
+    display: none;
+}

@@ -24,13 +24,13 @@
         <section class="score-panel">
 
         	<ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
+        		<li class="star_color"><i class="fa fa-star"></i></li>
+        		<li class="star_color"><i class="fa fa-star"></i></li>
+        		<li class="star_color"><i class="fa fa-star"></i></li>
         	</ul>
 
-        	<span class= "timer_1">0:00</span>
-            
+            <span class= "timer_1">0:00</span>
+
         	<span class="moves">Moves : 0 </span>
 
         </section>
@@ -39,13 +39,13 @@
 
             <div class="start">
                 <button class="start_button">Start</button>
-            </div>            
+            </div>
 
             <div class="restart">
                 <button class="reset_button"><i class="fa fa-repeat"></i></button>
             </div>
         </div>
-        
+
         <!-- deck of cards -->
         <ul class="deck">
             <li class="card">
@@ -99,9 +99,35 @@
         </ul>
     </div>
 
-    <script src="js/app.js"></script>    
+    <!-- game alert modal -->
+
+    <div class="game_Alet hide">
+        <div class="alert_Body">
+
+            <div class="alert_Heading">
+                <h1 class="alert_Title">You did it!</h1>
+                <span class="alert_Close">+</span>
+            <div>
+
+        <div class="inner_Alert">
+            <div class="alert_Stats">
+                <span class="alert_Time">Time =</span>
+                <span class="alert_Stars">Stars =</span>
+                <span class="alert_Moves">Moves =</span>
+            </div>
+
+
+            <div class="alert_Buttons">
+                <button class="alert_Button alert_Cancel">Cancel</button>
+                <button class="alert_Button alert_Reset">Reset</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
     <script src="js/shuffle.js"></script>
-    <script src="js/card.js"></script>    
+    <script src="js/card.js"></script>
     <script src="js/score.js"></script>
     <script src="js/timer.js"></script>
     <script src="js/alert.js"></script>

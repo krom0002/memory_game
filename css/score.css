@@ -64,6 +64,6 @@
 }
 
 /* adds gold color to stars for scoring */
-.fa-star{
+.star_color{
     color: gold;
 }
