@@ -1,10 +1,11 @@
 
 let clock_Off = true;
 let time = 0;
+let myTime = document.querySelector('.timer_1');
 
 function the_timer() {
 
-    let myTime =document.querySelector('.timer_1');
+    
 
     setInterval(function() {
 
@@ -41,4 +42,9 @@ function is_clock_on() {
         clock_Off = false;
     }
     return clock_Off;
+ }
+
+ function stop_clock() {
+
+    clearInterval(myTime);
  }

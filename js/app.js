@@ -20,7 +20,7 @@ function start_game() {
         write_deck();
         set_click();
         the_timer();
-        
+
     }
 }
 
@@ -40,7 +40,9 @@ function reset_game() {
     clear_deck();
     write_deck();
     shuffle(card_array);
-    timer_check(false);
+    console.log('click');
+    //timer_check(false);
+    stop_clock();
 
     // end timmer
     // reset timer
@@ -48,3 +50,4 @@ function reset_game() {
     // reset stars
     // give up .addEventListener("click", reset_game);modal
 }
+

@@ -46,6 +46,7 @@
     top: 0;
     right: 15px;
     transform: rotate(47deg);
+    cursor: pointer;
 }
 
 .inner_Alert {
