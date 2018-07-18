@@ -33,8 +33,18 @@ function write_deck() {
 // clears deck of matched cards -- used with rest button
 function clear_deck() {
 
+    time = 0;
+    click = 0;
+    match_count = 0;
+    moves = 0;
+    moves_Text.innerHTML = "Moves : " + moves;
+    win = 0;
+    star = 3;
+    the_timer()
+
     for (card of card_array) {
 
-        card.classList.toggle('match', !!matched_card);
+        card.classList.remove( "open", "show", "match");
     }
+    
 }

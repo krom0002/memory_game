@@ -51,7 +51,7 @@
 
 .inner_Alert {
 
-    background: black;
+    background: white;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -71,14 +71,14 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 10px;
-    background: gray;
+    background: white;
 }
 
 .alert_Buttons {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background: blue;
+    background: white;
     margin: 10px;
 }
 

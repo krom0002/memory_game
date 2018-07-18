@@ -3,17 +3,24 @@ let clock_Off = true;
 let time = 0;
 let myTime = document.querySelector('.timer_1');
 
+// the main timer
+// help from cranfords walk through
 function the_timer() {
 
-    
+    let time_handle = setInterval(function() {
 
-    setInterval(function() {
+        if(win === 0) {
 
         let { seconds, minutes } = convert_time();
 
         myTime.innerHTML = time++;
 
         format_time(seconds, myTime, minutes);
+    } else {
+
+        clearInterval(time_handle);
+        time_handle = 0;
+    }
     }, 1000);
 }
 
@@ -33,18 +40,3 @@ function format_time(seconds, myTime, minutes) {
         myTime.innerHTML = `${minutes}:${seconds}`;
     }
 }
-
-// checks to see if clock is off then turns on
-function is_clock_on() {
-
-    if (clock_Off) {
-        the_timer();
-        clock_Off = false;
-    }
-    return clock_Off;
- }
-
- function stop_clock() {
-
-    clearInterval(myTime);
- }

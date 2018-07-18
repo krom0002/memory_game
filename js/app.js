@@ -19,8 +19,8 @@ function start_game() {
         shuffle(card_array);
         write_deck();
         set_click();
+        game_Over();
         the_timer();
-
     }
 }
 
@@ -37,17 +37,9 @@ reset_click();
 // shuffles deck, writes to deck, stops timmer, and launches give up modal
 function reset_game() {
 
-    clear_deck();
-    write_deck();
-    shuffle(card_array);
-    console.log('click');
-    //timer_check(false);
-    stop_clock();
-
-    // end timmer
-    // reset timer
-    // reset move
-    // reset stars
-    // give up .addEventListener("click", reset_game);modal
+    // clear_deck();
+    // write_deck();
+    // shuffle(card_array);
+    location.reload();
 }
 
