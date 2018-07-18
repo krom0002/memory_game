@@ -36,8 +36,9 @@ function game_Alert() {
 
 //checks match count to win and endgame
 function game_Over() {
-    // need to change back to 8!!!
-    if (match_count === 1) {
+
+    // can change match_count for happy testing
+    if (match_count === 8) {
         win = 1;
         game_Alert();
         alert_close_x();
