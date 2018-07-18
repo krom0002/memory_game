@@ -5,6 +5,7 @@ let click = 0;
 matched_card = false;
 match_count = 0;
 
+// set click event on card
 function set_click() {
 
     for (card of card_array) {
@@ -12,10 +13,13 @@ function set_click() {
     }
 }
 
+// main card click event actions
 function card_click(event) {
 
     let card_select = event.target;
 
+    // tried to get it to not allow more than two click in a move??
+    // not producing the way intended??
     if (click <= 2 && !card_select.classList.contains('match')) {
 
         show_card(card_select);
@@ -30,6 +34,7 @@ function card_click(event) {
     }
 }
 
+// set timeout on card move
 function timeout() {
 
         setTimeout(() => {
@@ -39,6 +44,7 @@ function timeout() {
         }, 1500);
 }
 
+// adds flipped cards to an array
 function add_flip_Card(card_select) {
 
     if(click <= 2) {
@@ -48,12 +54,14 @@ function add_flip_Card(card_select) {
     }
 }
 
+// flips card
 function show_card(card_select) {
 
     card_select.classList.toggle('open');
     card_select.classList.toggle('show');
 }
 
+// shows matched card
 function show_match() {
 
     flipped[0].classList.toggle('match');
@@ -62,6 +70,7 @@ function show_match() {
     console.log('match' + match_count);
 }
 
+// checks for matched
 function match() {
 
     if (flipped[0].firstElementChild.className

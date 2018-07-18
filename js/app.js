@@ -26,6 +26,7 @@ function start_game() {
 
 // sets click event on reset button
 function reset_click() {
+    
     // select reset button element
     let reset_button = document.querySelector(".reset_button");
 
@@ -37,9 +38,6 @@ reset_click();
 // shuffles deck, writes to deck, stops timmer, and launches give up modal
 function reset_game() {
 
-    // clear_deck();
-    // write_deck();
-    // shuffle(card_array);
     location.reload();
 }
 
