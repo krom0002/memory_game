@@ -10,7 +10,6 @@ function move_count() {
     moves++;
     moves_Text.innerHTML = "Moves : " + moves;
     hide_Star();
-    console.log('star ' + star);
 }
 
 // checks move count to keep star score

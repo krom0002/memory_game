@@ -26,7 +26,7 @@ function start_game() {
 
 // sets click event on reset button
 function reset_click() {
-    
+
     // select reset button element
     let reset_button = document.querySelector(".reset_button");
 
