@@ -23,6 +23,8 @@ The game ends once all cards have been correctly matched.
 
 to play game open idex.html in browser
 
+or go to http://krosswired.com/memory where game is live
+
 ## Dependecies
 
 Boot Strap https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css
