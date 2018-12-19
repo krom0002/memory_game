@@ -37,7 +37,7 @@ https://fontawesome.com/
 
 ## Contributing
 
-Matt Kross @ krosswired development (krosswired.com)
+Matt Kross @ krosswired development (http://krosswired.com)
 
 udacity front end nano degree program
 project 2.
