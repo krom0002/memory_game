@@ -23,7 +23,7 @@ The game ends once all cards have been correctly matched.
 
 to play game open idex.html in browser
 
-or go to http://krosswired.com/memory where game is live
+or go to http://krosswired.com/memory.html where game is live 
 
 ## Dependecies
 
